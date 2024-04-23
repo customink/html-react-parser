@@ -1,3 +1,0 @@
-npm run test:ci
-npm run test:esm
-npx lint-staged
