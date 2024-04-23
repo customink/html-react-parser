@@ -42,7 +42,6 @@ jspm_packages
 
 # Build files
 dist/
-lib/
 
 # Vim swap files
 *.swp
