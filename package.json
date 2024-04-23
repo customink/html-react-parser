@@ -4,17 +4,6 @@
   "description": "HTML to React parser.",
   "author": "Mark <mark@remarkablemark.org> (https://remarkablemark.org)",
   "main": "./lib/index.js",
-  "module": "./esm/index.mjs",
-  "exports": {
-    ".": {
-      "import": "./esm/index.mjs",
-      "require": "./lib/index.js"
-    },
-    "./lib/*": {
-      "import": "./esm/*.mjs",
-      "default": "./lib/*.js"
-    }
-  },
   "scripts": {
     "benchmark": "ts-node benchmark",
     "build": "npm run build:cjs && npm run build:umd",
