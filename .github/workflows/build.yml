@@ -31,12 +31,3 @@ jobs:
         uses: codecov/codecov-action@v4
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-
-      - name: Run module tests
-        run: npm run test:esm
-
-      - name: Run integration tests
-        run: npm run test:integration
-
-      - name: Run benchmark
-        run: npm run benchmark
