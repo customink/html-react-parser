@@ -2,6 +2,69 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.10](https://github.com/customink/html-react-parser/compare/v5.1.10...v5.1.10) (2026-08-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* CommonJS imports require the `.default` key
+
+### Features
+
+* **dom-to-react:** pass index as 2nd argument to `replace` option ([b27d30c](https://github.com/customink/html-react-parser/commit/b27d30c5699f6de68ef05c8134589cd6a58d1a5f)), closes [#1240](https://github.com/customink/html-react-parser/issues/1240)
+
+
+### Bug Fixes
+
+* **dom-to-react:** default props.children to undefined instead of null ([a6978c3](https://github.com/customink/html-react-parser/commit/a6978c31acde279437e502106cd39ef0d0a34b87))
+* **esm:** fix any type ([#1317](https://github.com/customink/html-react-parser/issues/1317)) ([56549f1](https://github.com/customink/html-react-parser/commit/56549f12668d9dfcfc5fa47ec6a6cfb2977d7c36))
+* **esm:** fix attributes-to-props and dom-to-react exported types ([e3c7931](https://github.com/customink/html-react-parser/commit/e3c7931d4918d158d02286a7f8b30d53c521dcb4))
+* **esm:** fix ESM types by adding .mts declaration files ([ce09a65](https://github.com/customink/html-react-parser/commit/ce09a65a4dbf71e9d937b832e507f0c86c3ce4e0))
+* **esm:** fix exported types ([7a94d61](https://github.com/customink/html-react-parser/commit/7a94d61a64d9dcb14c65a94a3abe97ab0194be6c)), closes [#1305](https://github.com/customink/html-react-parser/issues/1305)
+* **esm:** make ESM exports explicit in index.mjs and utilities.mjs ([3e0fd2b](https://github.com/customink/html-react-parser/commit/3e0fd2b31ad602e3f791fef22ec5cd220aa4dd74))
+* **esm:** support vite bundler ([bad1e4c](https://github.com/customink/html-react-parser/commit/bad1e4c95f1726a8da79435ecd5bc09c135551fa)), closes [#1132](https://github.com/customink/html-react-parser/issues/1132)
+* **package:** move `@types/react` from devDependencies to dependencies ([78b7a8e](https://github.com/customink/html-react-parser/commit/78b7a8e8a52b23676a5d86ef60ee9c57683839e3)), closes [#1313](https://github.com/customink/html-react-parser/issues/1313)
+* **package:** set dependency `@types/react` to 17 or 18 ([0605477](https://github.com/customink/html-react-parser/commit/0605477b46e75e533a3628b542fc406e8b6198ab)), closes [#1320](https://github.com/customink/html-react-parser/issues/1320)
+* **types:** add back `object` to `replace` option return type ([88eea66](https://github.com/customink/html-react-parser/commit/88eea66dfe8f1a57aeff7ea631eaf64541e0131f))
+* **types:** use `React.JSX` instead of the global `JSX` namespace ([a25f41c](https://github.com/customink/html-react-parser/commit/a25f41ca608b85caba8f2517c81e88e4a0c246be))
+* upgrade html-dom-parser and style-to-js to fix source map warnings ([4469022](https://github.com/customink/html-react-parser/commit/4469022122f6fa5cba866d08aab52bb918c00297))
+
+
+### Miscellaneous Chores
+
+* **utilities:** remove unused function `invertObject` ([7cc8df7](https://github.com/customink/html-react-parser/commit/7cc8df7ebeae90de23c1953961c1003d3dc756a8))
+
+
+### Code Refactoring
+
+* **domToReact:** refactoring  multiple types ([8ef6201](https://github.com/customink/html-react-parser/commit/8ef620193347cca9983dca678e14330582e67f81))
+* improved attributes-to-props, dom-to-react, utilities ([049f19a](https://github.com/customink/html-react-parser/commit/049f19a5340cd93031460490ac7e74abd9d511aa))
+* improved dom-to-react, type ([6630d01](https://github.com/customink/html-react-parser/commit/6630d01ca0263ba5360d924cc83a25e106860de7))
+* migrate to TypeScript ([713c548](https://github.com/customink/html-react-parser/commit/713c548876345a30bac932b9a789e2ab9bec91f9)), closes [#1000](https://github.com/customink/html-react-parser/issues/1000)
+* **type:** improved attributes-to-props and utilities type ([f65ba8d](https://github.com/customink/html-react-parser/commit/f65ba8dda0862ef1d053b796948c24bbdbc337e0))
+
+
+### Build System
+
+* **deps:** bump html-dom-parser from 4.0.0 to 4.0.1 ([#1081](https://github.com/customink/html-react-parser/issues/1081)) ([9e09066](https://github.com/customink/html-react-parser/commit/9e09066808afc0eeb7d6b8e02acf03458c9c6cba))
+* **deps:** bump html-dom-parser from 5.0.0 to 5.0.1 ([#1089](https://github.com/customink/html-react-parser/issues/1089)) ([27de2d3](https://github.com/customink/html-react-parser/commit/27de2d3ab0dccf76887a890c23c4e66aec9a992a))
+* **deps:** bump html-dom-parser from 5.0.2 to 5.0.3 ([#1108](https://github.com/customink/html-react-parser/issues/1108)) ([52f7615](https://github.com/customink/html-react-parser/commit/52f76157c3909e7f3017d9aa3e2086934b539d9e))
+* **deps:** bump html-dom-parser from 5.0.3 to 5.0.4 ([#1141](https://github.com/customink/html-react-parser/issues/1141)) ([f5d9149](https://github.com/customink/html-react-parser/commit/f5d9149b2bc527e670de1f17ec8fa35f5b086a33))
+* **deps:** bump html-dom-parser from 5.0.4 to 5.0.5 ([#1221](https://github.com/customink/html-react-parser/issues/1221)) ([bdc69bf](https://github.com/customink/html-react-parser/commit/bdc69bf86114fbdf77d654c04104764c92f0fe03))
+* **deps:** bump html-dom-parser from 5.0.5 to 5.0.6 ([#1233](https://github.com/customink/html-react-parser/issues/1233)) ([0c70c12](https://github.com/customink/html-react-parser/commit/0c70c12f4065060a7d07b0c57aca5dd69d16c7c6))
+* **deps:** bump html-dom-parser from 5.0.6 to 5.0.7 ([#1264](https://github.com/customink/html-react-parser/issues/1264)) ([521f7ad](https://github.com/customink/html-react-parser/commit/521f7ad0b1fd306a2dccd158d689d194d8a31b4b))
+* **deps:** bump html-dom-parser from 5.0.7 to 5.0.8 ([#1307](https://github.com/customink/html-react-parser/issues/1307)) ([00ee71b](https://github.com/customink/html-react-parser/commit/00ee71b9830dd28cc3247b2a00ca61cf3bc083df))
+* **deps:** bump style-to-js from 1.1.10 to 1.1.11 ([#1368](https://github.com/customink/html-react-parser/issues/1368)) ([6e14815](https://github.com/customink/html-react-parser/commit/6e148150078646677a355684fc460a2f9bb67195))
+* **deps:** bump style-to-js from 1.1.11 to 1.1.12 ([#1380](https://github.com/customink/html-react-parser/issues/1380)) ([b7fb86d](https://github.com/customink/html-react-parser/commit/b7fb86db7c6ab4e73ce4739a71eee097fe89e614))
+* **deps:** bump style-to-js from 1.1.3 to 1.1.4 ([#1034](https://github.com/customink/html-react-parser/issues/1034)) ([7620daf](https://github.com/customink/html-react-parser/commit/7620daffb1fc8a19dcc960b3bb0b01d86ee8b138))
+* **deps:** bump style-to-js from 1.1.4 to 1.1.5 ([#1090](https://github.com/customink/html-react-parser/issues/1090)) ([0946e8a](https://github.com/customink/html-react-parser/commit/0946e8acf0e040955591250ce013f0cfce13ac54))
+* **deps:** bump style-to-js from 1.1.5 to 1.1.6 ([#1092](https://github.com/customink/html-react-parser/issues/1092)) ([93206d3](https://github.com/customink/html-react-parser/commit/93206d3023056e4e336e5689110bc3ca3b80bebc))
+* **deps:** bump style-to-js from 1.1.8 to 1.1.9 ([#1151](https://github.com/customink/html-react-parser/issues/1151)) ([ec6aefc](https://github.com/customink/html-react-parser/commit/ec6aefcddd537a1daf458813e2bb16eae4c2873c))
+* **deps:** bump style-to-js from 1.1.9 to 1.1.10 ([#1202](https://github.com/customink/html-react-parser/issues/1202)) ([1e18d9d](https://github.com/customink/html-react-parser/commit/1e18d9d5884014146c6d46a99b95694c48f518e0))
+* **package:** bump html-dom-parser from 4.0.1 to 5.0.0 ([9fb888f](https://github.com/customink/html-react-parser/commit/9fb888fe5661003fef2c7fbdd7eb5c241c030393))
+* **package:** bump react-property from 2.0.0 to 2.0.2 ([665b30a](https://github.com/customink/html-react-parser/commit/665b30ae3b218e5096f80ca7510c5ad878d0f6c4))
+* **package:** make @types/react an optional peerDependency ([8be504c](https://github.com/customink/html-react-parser/commit/8be504c92239c45b3e9d55094e6554124858ae39))
+
 ## [5.1.10](https://github.com/remarkablemark/html-react-parser/compare/v5.1.9...v5.1.10) (2024-03-28)
 
 
